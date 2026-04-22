@@ -1,0 +1,46 @@
+{
+  "name": "research-link",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "nuxt start",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.8.0",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxt/icon": "^2.1.0",
+    "@primeuix/themes": "^2.0.3",
+    "@vee-validate/i18n": "^4.15.1",
+    "@vee-validate/nuxt": "^4.15.1",
+    "@vee-validate/rules": "^4.15.1",
+    "echarts": "^6.0.0",
+    "lodash-es": "^4.17.21",
+    "nuxt": "^4.4.2",
+    "primevue": "^4.5.4",
+    "tailwindcss-primeui": "^0.6.1",
+    "vee-validate": "^4.15.1",
+    "vue": "^3.5.31",
+    "vue-echarts": "^8.0.1",
+    "vue-router": "^5.0.4"
+  },
+  "packageManager": "yarn@4.10.3",
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.5.4",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/file-saver": "^2",
+    "@types/lodash-es": "^4",
+    "@types/node": "^25.5.0",
+    "@vite-pwa/nuxt": "^1.1.1",
+    "nuxt-echarts": "^1.0.1",
+    "sass-embedded": "^1.99.0",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.2",
+    "tailwindcss-primeui": "^0.6.1"
+  }
+}

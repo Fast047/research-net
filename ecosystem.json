@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "research-link",
+      "script": "npm",
+      "args": "run start",
+      "autorestart": true,
+      "watch": [
+        "src"
+      ],
+      "ignoreWatch": [
+        "node_modules",
+        "public"
+      ]
+    }
+  ]
+}

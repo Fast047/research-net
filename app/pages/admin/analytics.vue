@@ -1,0 +1,20 @@
+<template>
+  <div class="scroll-pane space-y-6">
+    <ClientOnly>
+      <div>
+        <DashboardAnalytics />
+      </div>
+    </ClientOnly>
+  </div>
+</template>
+
+<script lang="ts" setup>
+definePageMeta({
+  title: 'ระบบฐานข้อมูลและแผนที่เครือข่ายความร่วมมือวิจัยเชิงรุก',
+  layout: 'sidebar-layout'
+});
+</script>
+
+<style>
+
+</style>
