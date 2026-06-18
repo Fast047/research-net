@@ -24,6 +24,13 @@ export const useTheme = () => {
     isLight.value = false
   }
 
+  // จัดการการเพิ่ม/ลด class 'dark' บน html element เมื่อค่าเปลี่ยน
+  if (import.meta.client) {
+    watch(isLight, (val) => {
+      document.documentElement.classList.toggle('dark', !val)
+    }, { immediate: true })
+  }
+
   return {
     isLight,
     setDark,

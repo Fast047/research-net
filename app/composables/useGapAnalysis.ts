@@ -1,3 +1,5 @@
+import { THEMES, RESEARCHERS } from '../utils/mockData';
+
 export const useGapAnalysis = () => {
   
   const gaps = computed(() => {

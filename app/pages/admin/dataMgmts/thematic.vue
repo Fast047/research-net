@@ -136,6 +136,9 @@
 </template>
 
 <script lang="ts" setup>
+import { THEMES, GROUPS, MOUS, rankForTheme } from '../../../utils/mockData';
+import { TC } from '../../../utils';
+
 const selTheme = ref<string | null>(null)
 
 const selectTheme = async (k: string) => {

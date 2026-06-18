@@ -43,12 +43,12 @@ const { role } = useNavigation();
 const ADMIN_TABS:any[] = [
     { id: 'dashboard', l: 'Dashboard', to: '/admin/overview'},
     { id: 'data', l: 'Data Management', to: '/admin/dataMgmts' },
-    { id: 'network', l: 'Network Map' , to: '/admin/network' },
+    { id: 'network', l: 'Knowledge Graph' , to: '/admin/knowledge-graph' },
     { id: 'mouflow', l: 'MOU Flow' , to: '/admin/mouflow' },
-    { id: 'feasibility', l: 'MOU Feasibility ✦' , to: '/admin/Feasibility' },
-    { id: 'gap', l: 'Gap', to: '/admin/gap' },
+    { id: 'feasibility', l: 'MOU Feasibility ✦' , to: '/admin/feasibility' },
+    { id: 'gap', l: 'Skill Gap', to: '/admin/skill-gap' },
     { id: 'clusters', l: 'Clusters', to: '/admin/cluster' },
-    { id: 'analytics', l: 'Statistics', to: '/admin/analytics' }
+    { id: 'analytics', l: 'Graph Analytics', to: '/admin/graph-analytics' }
 ]
 
 const VIEWER_TABS:any[] = [

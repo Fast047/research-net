@@ -1,3 +1,5 @@
+import { RESEARCHERS, GROUPS, THEMES, HISTORY, WORKS, rankForTheme } from '../utils/mockData';
+
 export const useFeasibility = () => {
   const form = reactive({
     name: '', inst: '', country: '', budget: '', obj: '',
@@ -22,26 +24,7 @@ export const useFeasibility = () => {
     const theme = form.selectedTheme;
     const kws = form.selectedKeywords;
     const topResearchers = rankForTheme(theme, kws, 6);
-    // 1. Rank Researchers (Top 6)
-    const rankedResearchers = RESEARCHERS.map(r => {
-      const themeScore = r.score_by_theme[theme as keyof typeof r.score_by_theme] || 0;
-      const kwMatch = r.expertise.filter(e => kws.some(k => e.includes(k))).length;
-      const historyCount = HISTORY.filter(h => h.researcher_id === r.id).length;
-      const worksCount = WORKS.filter(w => w.researcher === r.id).length;
-
-      // Composite Score Logic
-      const score = Math.round((themeScore * 0.5) + (Math.min(30, kwMatch * 10)) + (Math.min(20, historyCount * 5)));
-
-      return {
-        ...r,
-        score,
-        mouExp: historyCount,
-        works: worksCount,
-        expBonus: historyCount // historical records
-      };
-    }).sort((a, b) => b.score - a.score).slice(0, 6);
-
-    // 2. Recommend Groups (Top 4)
+    
     const recommendedGroups = GROUPS.filter(g => 
       g.theme?.includes(theme) || g.theme === theme
     ).sort((a, b) => b.exp_score - a.exp_score).slice(0, 4);
