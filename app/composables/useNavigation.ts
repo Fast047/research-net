@@ -32,7 +32,8 @@ export const useNavigation = () => {
   { groupId: 'G02', id:'thematic',icon:'🗺',label:'Thematic Mapping', href: '/admin/dataMgmts/thematic', pip:null},
   { groupId: 'G03', id:'gap',icon:'📊',label:'Skill Gap', href: '/admin/skill-gap', pip:null},
   { groupId: 'G03', id:'cluster',icon:'🔗',label:'Cluster Analysis', href: '/admin/cluster', pip:null},
-  { groupId: 'G03', id:'statistics',icon:'🔗',label:'Graph Analytics', href: '/admin/analytics', pip:null},
+  { groupId: 'G03', id:'statistics',icon:'🔗',label:'Graph Analytics', href: '/admin/graph-analytics', pip:null},
+  { groupId: 'G03', id:'statistics',icon:'🔗',label:'สถิติ & วิเคราะห์', href: '/admin/analytics', pip:null},
   { groupId: 'G02', id:'history',icon:'📋',label:'Historical Records', href: '/admin/dataMgmts/history', pip:{cls:'cyan',n:HISTORY.length}},
 ]
 
